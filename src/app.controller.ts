@@ -1,4 +1,4 @@
-import { Get, Controller, Res, Render } from '@nestjs/common';
+import { Controller, Get, Render, Res } from '@nestjs/common';
 import { Response } from 'express';
 import { AppService } from './app.service';
 
@@ -7,16 +7,14 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get(['index', '/'])
-  @Render('index')
   index(@Res() res: Response) {
-    return res.render('index', {
+    return res.status(200).render('index', {
       layout: 'main',
       title: 'Literacy Candy',
     });
   }
 
   @Get('novelas')
-  @Render('novelas')
   novelas(@Res() res: Response) {
     return res.render('novelas', {
       layout: 'main',
@@ -25,7 +23,6 @@ export class AppController {
   }
 
   @Get('receitas')
-  @Render('receitas')
   receitas(@Res() res: Response) {
     return res.render('receitas', {
       layout: 'main',
@@ -34,7 +31,6 @@ export class AppController {
   }
 
   @Get('poesias')
-  @Render('poesias')
   poesias(@Res() res: Response) {
     return res.render('poesias', {
       layout: 'main',
@@ -43,7 +39,6 @@ export class AppController {
   }
 
   @Get('contos')
-  @Render('contos')
   contos(@Res() res: Response) {
     return res.render('contos', {
       layout: 'main',
