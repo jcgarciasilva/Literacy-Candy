@@ -35,6 +35,7 @@ export class AppController {
     return res.render('poesias', {
       layout: 'main',
       title: 'Literacy Candy',
+      books: this.appService.getPoesias(),
     });
   }
 
