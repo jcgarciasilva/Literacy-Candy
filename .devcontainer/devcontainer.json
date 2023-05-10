@@ -16,7 +16,14 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"vivaxy.vscode-conventional-commits",
+				"SonarSource.sonarlint-vscode",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"mohsen1.prettify-json",
+				"eamodio.gitlens",
+				"esbenp.prettier-vscode"
+
 			]
 		}
 	},

@@ -1,5 +1,5 @@
-import { Controller, Get, Render, Res } from '@nestjs/common';
-import { Response } from 'express';
+import { Controller, Get, Req, Res } from '@nestjs/common';
+import { Request, Response } from 'express';
 import { AppService } from './app.service';
 
 @Controller()
@@ -7,9 +7,11 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get(['index', '/'])
-  index(@Res() res: Response) {
+  index(@Req() req: Request, @Res() res: Response) {
     return res.status(200).render('index', {
       layout: 'main',
+      url: req.url,
+      gradient: true,
       title: 'Literacy Candy',
     });
   }

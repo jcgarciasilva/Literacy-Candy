@@ -1,9 +1,16 @@
 {
-  "name": "project",
+  "name": "literacy-candy",
   "version": "0.0.1",
   "description": "",
   "author": "",
   "private": true,
+  "prettier": {
+    "printWidth": 90,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "parser": "typescript"
+  },
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
