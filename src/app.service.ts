@@ -2,10 +2,8 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  
-
   getPoesias(): Book[] {
-    poesiaBooks: Book[] = [];
+    const poesiaBooks: Book[] = [];
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
@@ -13,7 +11,7 @@ export class AppService {
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
-poesiaBooks.push({ title: '', description: '', downloadLink: '' });
+    poesiaBooks.push({ title: '', description: '', downloadLink: '' });
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
     poesiaBooks.push({ title: '', description: '', downloadLink: '' });
