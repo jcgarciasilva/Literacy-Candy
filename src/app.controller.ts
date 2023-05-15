@@ -16,6 +16,16 @@ export class AppController {
     });
   }
 
+  @Get(['team'])
+  team(@Req() req: Request, @Res() res: Response) {
+    return res.status(200).render('team', {
+      layout: 'main',
+      url: req.url,
+      gradient: true,
+      title: 'Literacy Candy',
+    });
+  }
+
   @Get('novelas')
   novelas(@Res() res: Response) {
     return res.render('novelas', {
