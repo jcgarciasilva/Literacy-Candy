@@ -21,6 +21,7 @@ export class AppController {
     return res.render('novelas', {
       layout: 'main',
       title: 'Literacy Candy',
+      books: this.appService.getNovels(),
     });
   }
 
@@ -29,6 +30,7 @@ export class AppController {
     return res.render('receitas', {
       layout: 'main',
       title: 'Literacy Candy',
+      books: this.appService.getRecepies(),
     });
   }
 
@@ -46,6 +48,7 @@ export class AppController {
     return res.render('contos', {
       layout: 'main',
       title: 'Literacy Candy',
+      books: this.appService.getContos(),
     });
   }
 }

@@ -1,10 +1,53 @@
-<div class='pt-24'>
+<section class="border-b bg-white py-8">
+<div class='pt-24 min-h-screen'>
   <div
-    class='container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center'
+    class='container max-w-5xl mx-auto m-8'
   >
-  <h1>
-RECEITAS
-</h1>
+    <h2 class='w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800'>
+      RECEITAS
+    </h2>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+    </div>
+    <p class="text-gray-600 mb-8">
+      Praesent nunc diam, lacinia aliquam placerat et, vestibulum in elit. Nulla
+      sodales condimentum erat, id tempus libero. Nam a imperdiet tortor. Nullam
+      tempor eget augue sed varius. Quisque eget nisi dapibus nibh consectetur
+      ornare at dictum lectus. Ut massa orci, porttitor eget elit quis,
+      convallis laoreet tellus. Morbi fringilla velit et ex tristique accumsan.
+      Mauris vel posuere elit. Morbi commodo arcu quis tellus cursus
+      consectetur. Mauris hendrerit lectus diam, et fermentum est bibendum quis.
+      Morbi lacinia vulputate purus sed tempor. Suspendisse sit amet suscipit
+      mi.
+    </p>
+  </div>
+
+  <div  class='container max-w-5xl mx-auto'>
+
+    {{#each books}}
+      <div class=" basis-48 max-w-sm w-full lg:max-w-full lg:flex pb-10">
+        <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('{{this.image}}')" title="{{this.title}}">
+        </div>
+        <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <div class="text-gray-900 font-bold text-xl mb-2">{{this.title}}</div>
+            <p class="text-gray-700 text-base">{{this.description}}</p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+              <p class="text-gray-600">Aug 18</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+
   </div>
 
 </div>
+
+</section>
+
+{{>detailsScripts}}
