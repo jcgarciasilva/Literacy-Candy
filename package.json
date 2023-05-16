@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "author": "",
+  "config": {
+    "imageRepo": "jcgarciasilva/literacy-candy",
+    "imageName": "literacy-candy",
+    "imagePort": "3000"
+  },
   "private": true,
   "prettier": {
     "printWidth": 90,
@@ -24,7 +29,17 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "predocker:build": "npm run build -- --prod --output-path dist && npm test -- --watch=false ",
+    "docker:build": "docker image build . -t $npm_package_config_imageRepo:$npm_package_version",
+    "postdocker:build": "npm run docker:tag",
+    "docker:tag": " cross-conf-env docker image tag $npm_package_config_imageRepo:$npm_package_version $npm_package_config_imageRepo:latest",
+    "docker:run": "run-s -c docker:clean docker:runHelper",
+    "docker:runHelper": "cross-conf-env docker run -e NODE_ENV=local --name $npm_package_config_imageName -d -p $npm_package_config_imagePort:3000 $npm_package_config_imageRepo",
+    "predocker:publish": "echo Attention! Ensure `docker login` is correct.",
+    "docker:publish": "cross-conf-env docker image push $npm_package_config_imageRepo:$npm_package_version",
+    "postdocker:publish": "cross-conf-env docker image push $npm_package_config_imageRepo:latest",
+    "docker:clean": "cross-conf-env docker rm -f $npm_package_config_imageName"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",

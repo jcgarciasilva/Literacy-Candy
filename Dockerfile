@@ -12,13 +12,16 @@ WORKDIR /usr/src/app
 # Copying this first prevents re-running npm install on every code change.
 COPY --chown=node:node package*.json ./
 
-COPY views* ./dist
+COPY  ./views/ ./dist/views
+COPY --chown=node:node ./public/ ./dist/public
 
 # Install app dependencies using the `npm ci` command instead of `npm install`
 RUN npm ci
 
 # Bundle app source
 COPY --chown=node:node . .
+COPY --chown=node:node ./views/ ./views
+COPY --chown=node:node ./public/ ./public
 
 # Use the node user from the image (instead of the root user)
 USER node
@@ -58,6 +61,7 @@ FROM node:18-alpine As production
 # Copy the bundled code from the build stage to the production image
 COPY --chown=node:node --from=build /usr/src/app/node_modules ./node_modules
 COPY --chown=node:node --from=build /usr/src/app/dist ./dist
+COPY --chown=node:node . .
 
 # Start the server using the production build
 CMD [ "node", "dist/main.js" ]
