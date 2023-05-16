@@ -25,6 +25,7 @@
  
   </head>
   <body class="leading-normal tracking-normal text-white  gradient " style="font-family: 'Source Sans Pro', sans-serif;">
+    
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -44,19 +45,19 @@
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="/team">Equipa & Serviços</a>
+              <a class="inline-block text-black {{#eq @exphbs.view 'team'}} font-bold no-underline  {{/eq}} no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/team">Equipa & Serviços</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/contos">Contos</a>
+              <a class="inline-block text-black {{#eq @exphbs.view 'contos'}} font-bold no-underline {{/eq}} no-underline hover:text-gray-800 hover:text-underline  py-2 px-4" href="/contos">Contos</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/poesias">Poesias</a>
+              <a class="inline-block text-black {{#eq @exphbs.view 'poesias'}} font-bold no-underline {{/eq}} no-underline hover:text-gray-800 hover:text-underline  py-2 px-4" href="/poesias">Poesias</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/receitas">Receitas</a>
+              <a class="inline-block text-black {{#eq @exphbs.view 'receitas'}} font-bold no-underline {{/eq}} no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/receitas">Receitas</a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/novelas">Novelas Gráficas</a>
+              <a class="inline-block text-black {{#eq @exphbs.view 'novelas'}} font-bold no-underline {{/eq}} no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="/novelas">Novelas Gráficas</a>
             </li>
           </ul>
           <button
@@ -69,9 +70,7 @@
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
-
     {{{ body }}}
-
 
     {{> footer}}
     {{> scripts}}

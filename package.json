@@ -47,7 +47,9 @@
     "@nestjs/platform-express": "^9.0.0",
     "@types/express-handlebars": "^5.3.1",
     "express-handlebars": "^5.3.5",
+    "handlebars-helpers": "^0.10.0",
     "hbs": "^4.2.0",
+    "nestjs-i18n": "^10.2.6",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   },
