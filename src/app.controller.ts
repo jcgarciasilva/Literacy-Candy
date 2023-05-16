@@ -1,6 +1,6 @@
-import { Controller, Get, Req, Res } from '@nestjs/common';
-import { Request, Response } from 'express';
-import { AppService } from './app.service';
+import { Controller, Get, Req, Res } from '@nestjs/common'
+import { Request, Response } from 'express'
+import { AppService } from './app.service'
 
 @Controller()
 export class AppController {
@@ -13,7 +13,7 @@ export class AppController {
       url: req.url,
       gradient: true,
       title: 'Literacy Candy',
-    });
+    })
   }
 
   @Get(['team'])
@@ -23,7 +23,7 @@ export class AppController {
       url: req.url,
       gradient: true,
       title: 'Literacy Candy',
-    });
+    })
   }
 
   @Get('novelas')
@@ -32,7 +32,7 @@ export class AppController {
       layout: 'main',
       title: 'Literacy Candy',
       books: this.appService.getNovels(),
-    });
+    })
   }
 
   @Get('receitas')
@@ -41,7 +41,7 @@ export class AppController {
       layout: 'main',
       title: 'Literacy Candy',
       books: this.appService.getRecepies(),
-    });
+    })
   }
 
   @Get('poesias')
@@ -50,7 +50,7 @@ export class AppController {
       layout: 'main',
       title: 'Literacy Candy',
       books: this.appService.getPoesias(),
-    });
+    })
   }
 
   @Get('contos')
@@ -59,6 +59,6 @@ export class AppController {
       layout: 'main',
       title: 'Literacy Candy',
       books: this.appService.getContos(),
-    });
+    })
   }
 }

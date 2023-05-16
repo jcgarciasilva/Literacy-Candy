@@ -11,7 +11,8 @@ async function bootstrap() {
 
   const ehbs = hbs({
     extname: 'hbs',
-    helpers:  require('handlebars-helpers')(),
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    helpers: require('handlebars-helpers')(),
     partialsDir: join(__dirname, '..', 'views/partials'),
     defaultLayout: 'main',
     layoutsDir: join(__dirname, '..', 'views/layouts'),
