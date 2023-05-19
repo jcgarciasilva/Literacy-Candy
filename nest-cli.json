@@ -5,9 +5,7 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "assets": [
-      { "include": "i18n/**/*", "watchAssets": true },
-      { "include": "../views/**/*", "watchAssets": true },
-      { "include": "../public/**/*", "watchAssets": true }
+      { "include": "i18n/**/*", "watchAssets": true }
     ]
   }
   

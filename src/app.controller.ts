@@ -1,7 +1,6 @@
-import { Controller, Get, Param, Req, Res } from '@nestjs/common'
-import { throws } from 'assert'
+import { Controller, Get, Req, Res } from '@nestjs/common'
 import { Request, Response } from 'express'
-import { I18n, I18nContext, I18nLang, I18nService } from 'nestjs-i18n'
+import { I18n, I18nContext, I18nLang } from 'nestjs-i18n'
 import { AppService } from './app.service'
 
 @Controller()
@@ -15,13 +14,17 @@ export class AppController {
     @I18n() i18n: I18nContext,
     @I18nLang() lang: string
   ) {
-    console.log(lang)
     return res.status(200).render('index', {
       layout: 'main',
       url: req.url,
       gradient: true,
       lang: lang ? 'pt' : i18n.lang,
-      title: i18n.t('site.home'),
+      title: i18n.t('site.title'),
+      whoweare: i18n.t('site.whoweare.title'),
+      whoweare_description1: i18n.t('site.whoweare.description1'),
+      whoweare_description2: i18n.t('site.whoweare.description2'),
+      mission_title: i18n.t('site.mission.title'),
+      mission_description: i18n.t('site.mission.description'),
     })
   }
 
@@ -66,6 +69,7 @@ export class AppController {
     return res.render('poesias', {
       layout: 'main',
       title: 'Literacy Candy',
+      lang: lang ? 'pt' : i18n.lang,
       books: this.appService.getPoesias(),
     })
   }
@@ -75,6 +79,7 @@ export class AppController {
     return res.render('contos', {
       layout: 'main',
       title: 'Literacy Candy',
+      lang: lang ? 'pt' : i18n.lang,
       books: this.appService.getContos(),
     })
   }

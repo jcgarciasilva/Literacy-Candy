@@ -1,9 +1,74 @@
 {
-    "home": "Literacy Candy",
+    "title": "Literacy Candy",
+    "home": "Home",
     "contact": "Contato",
-    "menu":"Menu",
-    "MISSION":"Missão, Visão & Valores",
-    "MISSION_HEADER":"Missão, Visão & Valores",
-    "CONTOS_HEADER"  :"CONTOS",
-    "CONTOS_DESCRIPTION": "Praesent nunc diam, lacinia aliquam placerat et, vestibulum in elit. Nulla "
-  }
+    "menu": "Menu",
+    "mission": {
+        "title": "Missão, Visão & Valores",
+        "header": "Missão, Visão & Valores",
+        "description": "Nós acreditamos que a linguagem é uma janela mágica que nos conecta a pessoas e lugares distantes. É por isso que estamos aqui para tornar a aprendizagem de idiomas algo cheio de alegria e aventuras emocionantes.<br>Um tradutor de histórias infantis são verdadeiros encantadores de crianças. Eles são os responsáveis por tornar as histórias acessiveis e atraentes, trazem vida às palavras, transformando contos e fábulas em aventuras mágicas. <br>Buscamos principalmente promover o gosto das crianças pela leitura, facilitando o acesso de obras para as crianças e buscando envolver os pequenos leitores, de formar a criar conexões profundas entre as culturas e idiomas, despertando a imaginação e a curiosidade."
+    },
+    "whoweare": {
+        "title": "QUEM SOMOS",
+        "header": "",
+        "description1": "Bem-vindos ao nosso incrível mundo de tradução infantil! Aqui, somos uma equipe apaixonada por palavras e histórias, prontos para ajudar crianças de todo o mundo a descobrir novas línguas e culturas de forma divertida e educativa. <br>   Nossa equipe é formada por tradutores especializados em conteúdo infantil. Somos como fadas da tradução, capazes de transformar contos, poemas e jogos em diferentes idiomas, para que crianças de todas as partes do mundo possam desfrutar dessas maravilhosas histórias.      Além de traduzir, também adoramos criar materiais exclusivos para as crianças. Nossos livros interativos estimulam a curiosidade e a imaginação, tudo de forma lúdica e envolvente. <br> Sabemos que desvendar uma nova língua pode parecer desafiador, mas acreditamos que a diversão é a chave para desbloquear esse conhecimento. É por isso que nossos materiais são coloridos, animados e cheios de personagens cativantes que guiam as crianças em suas jornadas de aprendizado.",
+        "description2": "Se você é um pai, uma mãe, um professor ou simplesmente uma criança curiosa, você veio ao lugar certo! Estamos aqui para ajudá-lo a mergulhar em um mundo de palavras mágicas, onde ler se torna uma aventura emocionante e cheia de descobertas.<br> Então, junte-se a nós e vamos embarcar nessa jornada incrível de aprendizado, diversão e amizade através das palavras! Estamos aqui para ajudá-lo a mergulhar em um mundo de palavras mágicas, onde ler se torna uma aventura emocionante e cheia de descobertas.<br>      Então, junte-se a nós e vamos embarcar nessa jornada incrível de aprendizado, diversão e amizade através das palavras!"
+    },
+    "team": {
+        "title": "EQUIPE",
+        "description": "Juntas, nossa equipe forma um grupo apaixonado por idiomas e dedicado a tornar a aprendizagem de línguas e a leitura de textos uma jornada mágica e empolgante para as crianças. Estamos aqui para oferecer as melhores traduções infantis, promovendo o amor pela leitura, o respeito às culturas e a curiosidade pelo mundo ao nosso redor.",
+        "members": [
+            {
+                "name": "Anna Clara Neiva Bastos",
+                "description": "estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT. Tradutora de holandês e espanhol e responsável pelo comercial da empresa: ela é a responsável por gerir os pedidos e assegurar o bom contato com os nossos clientes, de forma que possamos promover a melhor experiência de atendimento e garantir que as traduções sejam realizadas o mais fielmente possivel com aquilo que nos é solicitado."
+            },
+            {
+                "name": "Luiza Helena Pacheco Testi de Almeida",
+                "description": "estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT, ela é a gerente e idealizadora principal da Literacy Candy Traduções. Exploradora de novas culturas e tradutora: ela é especialista em culturas e tradições está sempre explorando novos territórios linguísticos, mas a sua especialidade é a língua inglesa. Ela é sempre atenta as peculiaridades de cada idioma, as tradições locais e os costumes, para garantir que nossas traduções sejam autênticas e reflitam a riqueza cultural de cada região."
+            },
+            {
+                "name": "Melissa de França Lemes",
+                "description": "estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT. A revisora, tradutora de italiano e designer criativa: Nossa designer têm o dom de transformar páginas estáticas em universos vibrantes e coloridos. Ela traz personagens encantadores à vida, criam ilustrações cativantes e projetam layouts atraentes para nossos livros e nosso site. Tudo isso para tornar a experiência de leitura e aprendizado visualmente estimulante e agradável."
+            }
+        ]
+    },
+    "services": {
+        "title": "Serviços linguísticos",
+        "header": "Serviços linguísticos",
+        "desc": [
+            {
+                "type": "Tradução",
+                "description": "Combinações linguísticas:<br><br>Graças à nossa equipe de tradutoras<br>bilingues, o nosso trabalho de tradução é realizado, sobretudo, a partir de uma língua estrangeira para o português e a partir do português para uma língua estrangeira.<br>Logo, trabalhamos com as combinações linguísticas: inglês, italiano, espanhol e holandês ↔ português. <br><br>- Diferentes tipos de documentos: <br>Trabalhamos especialmente com a área literária, porém recentemente adicionamos ao nosso catálogo documentos dos gêneros: de caráter geral, publicitário, comercial e diplomação (de natação)."
+            },
+            {
+                "type": "Localização",
+                "description": "Traduzimos e adaptamos o conteúdo textual <br>à língua e cultura do seu mercado-alvo."
+            },
+            {
+                "type": "Revisão e edição textual",
+                "description": "Fazemos a revisão e a correção linguística dos documentos, verificamos a qualidade e consistência de traduções, preparamos os textos de acordo com as normas de formatação que nos é solicitada."
+            },
+            {
+                "type": "Terminologia e elaboração de glossários",
+                "description": "Fazemos o levantamento de terminologia específica da área em questão, compilamos glossários e mantemos a consistência ao longo de todo o trabalho."
+            }
+        ],
+        "description": "Bem-vindos ao nosso incrível mundo de tradução infantil! Aqui, somos uma equipe apaixonada por palavras e histórias, prontos para ajudar crianças de todo o mundo a descobrir novas línguas e culturas de forma divertida e educativa. <br>   Nossa equipe é formada por tradutores especializados em conteúdo infantil. Somos como fadas da tradução, capazes de transformar contos, poemas e jogos em diferentes idiomas, para que crianças de todas as partes do mundo possam desfrutar dessas maravilhosas histórias.      Além de traduzir, também adoramos criar materiais exclusivos para as crianças. Nossos livros interativos estimulam a curiosidade e a imaginação, tudo de forma lúdica e envolvente. <br> Sabemos que desvendar uma nova língua pode parecer desafiador, mas acreditamos que a diversão é a chave para desbloquear esse conhecimento. É por isso que nossos materiais são coloridos, animados e cheios de personagens cativantes que guiam as crianças em suas jornadas de aprendizado. <br> Se você é um pai, uma mãe, um professor ou simplesmente uma criança curiosa, você veio ao lugar certo! Estamos aqui para ajudá-lo a mergulhar em um mundo de palavras mágicas, onde ler se torna uma aventura emocionante e cheia de descobertas.<br>      Então, junte-se a nós e vamos embarcar nessa jornada incrível de aprendizado, diversão e amizade através das palavras!"
+    },
+    "poetry": {
+        "title": "POESIA",
+        "description": "Disponibilizamos aqui poesias infantis gratuitas de forma a incetivar os pequenos a tomar gosto pela leitura da escrita poética."
+    },
+    "receipes": {
+        "title": "Receitas",
+        "description": "Disponibilizamos aqui receitas simples para os pais poderem fazer com as crianças para incentivar os pequenos ao gosto não só pela leitura como também pela culinária. "
+    },
+    "tales": {
+        "title": "Contos",
+        "description": "Disponibilizamos aqui contos infantis já em dominio público traduzidos para o português, de forma que as crianças possam ter contato com os clássicos infantis."
+    },
+    "novel": {
+        "title": "Novelas gráficas",
+        "description": "Disponibilizamos aqui novelas gráficas semanalmente para divulgar o trabalho de grandes artistas que trabalham duro para criar histórias tão belas para as crianças. Recomendamos fortemente que vocẽ consuma o material original para dar os devidos créditos ao artista."
+    }
+}
