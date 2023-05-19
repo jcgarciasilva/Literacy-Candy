@@ -1,11 +1,15 @@
-import { Controller, Get, Req, Res } from '@nestjs/common'
+import { Controller, Get, Inject, Req, Res } from '@nestjs/common'
 import { Request, Response } from 'express'
-import { I18n, I18nContext, I18nLang } from 'nestjs-i18n'
+import { I18n, I18nContext, I18nLang, I18nService } from 'nestjs-i18n'
 import { AppService } from './app.service'
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    private readonly appService: AppService,
+    private readonly i18nService: I18nService
+    
+  ) {}
 
   @Get(['/', '/:lang'])
   index(
@@ -14,17 +18,18 @@ export class AppController {
     @I18n() i18n: I18nContext,
     @I18nLang() lang: string
   ) {
+    this.i18nService.resolveLanguage(lang)
     return res.status(200).render('index', {
       layout: 'main',
       url: req.url,
       gradient: true,
       lang: lang ? 'pt' : i18n.lang,
       title: i18n.t('site.title'),
-      whoweare: i18n.t('site.whoweare.title'),
-      whoweare_description1: i18n.t('site.whoweare.description1'),
-      whoweare_description2: i18n.t('site.whoweare.description2'),
-      mission_title: i18n.t('site.mission.title'),
-      mission_description: i18n.t('site.mission.description'),
+      whoweare: i18n.t('site.whoweare.title', { lang }),
+      whoweare_description1: i18n.t('site.whoweare.description1', { lang }),
+      whoweare_description2: i18n.t('site.whoweare.description2', { lang }),
+      mission_title: i18n.t('site.mission.title', { lang }),
+      mission_description: i18n.t('site.mission.description', { lang }),
     })
   }
 
