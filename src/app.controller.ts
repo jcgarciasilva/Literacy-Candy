@@ -1,4 +1,4 @@
-import { Controller, Get, Inject, Req, Res } from '@nestjs/common'
+import { Controller, Get, Inject, Param, Query, Req, Res } from '@nestjs/common'
 import { Request, Response } from 'express'
 import { I18n, I18nContext, I18nLang, I18nService } from 'nestjs-i18n'
 import { AppService } from './app.service'
@@ -16,7 +16,7 @@ export class AppController {
     @Req() req: Request,
     @Res() res: Response,
     @I18n() i18n: I18nContext,
-    @I18nLang() lang: string
+    @Param('lang') lang: string
   ) {
     this.i18nService.resolveLanguage(lang)
     return res.status(200).render('index', {
