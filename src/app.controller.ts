@@ -26,6 +26,7 @@ export class AppController {
       lang: lang ? 'pt' : i18n.lang,
       title: i18n.t('site.title'),
       whoweare: i18n.t('site.whoweare.title', { lang }),
+      whoweare_title1: i18n.t('site.whoweare.title1', { lang }),
       whoweare_description1: i18n.t('site.whoweare.description1', { lang }),
       whoweare_description2: i18n.t('site.whoweare.description2', { lang }),
       mission_title: i18n.t('site.mission.title', { lang }),
