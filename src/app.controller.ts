@@ -1,6 +1,6 @@
-import { Controller, Get, Inject, Param, Query, Req, Res } from '@nestjs/common'
+import { Controller, Get, Param, Req, Res } from '@nestjs/common'
 import { Request, Response } from 'express'
-import { I18n, I18nContext, I18nLang, I18nService } from 'nestjs-i18n'
+import { I18n, I18nContext, I18nService } from 'nestjs-i18n'
 import { AppService } from './app.service'
 
 @Controller()
@@ -22,9 +22,16 @@ export class AppController {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang ? 'pt' : i18n.lang,
-      title: i18n.t('site.title'),
-      contact: i18n.t('site.contact'),
+      lang: lang,
+      links: {
+        team_and_services: i18n.t('site.links.team_and_services', { lang }),
+        tales: i18n.t('site.links.tales', { lang }),
+        poetry: i18n.t('site.links.poetry', { lang }),
+        novel: i18n.t('site.links.novel', { lang }),
+        receipes: i18n.t('site.links.receipes', { lang }),
+      },
+      title: i18n.t('site.title', { lang }),
+      contact: i18n.t('site.contact', { lang }),
       main_title: i18n.t('site.main.title', { lang }),
       main_text: i18n.t('site.main.main_text', { lang }),
       main_sub_text: i18n.t('site.main.sub_text', { lang }),
@@ -50,7 +57,14 @@ export class AppController {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang ? 'pt' : i18n.lang,
+      lang: lang,
+      links: {
+        team_and_services: i18n.t('site.links.team_and_services', { lang }),
+        tales: i18n.t('site.links.tales', { lang }),
+        poetry: i18n.t('site.links.poetry', { lang }),
+        novel: i18n.t('site.links.novel', { lang }),
+        receipes: i18n.t('site.links.receipes', { lang }),
+      },
       title: i18n.t('site.title', { lang }),
       contact: i18n.t('site.contact', { lang }),
       team: i18n.t('site.team.title', { lang }),
@@ -81,7 +95,14 @@ export class AppController {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang ? 'pt' : i18n.lang,
+      lang: lang,
+      links: {
+        team_and_services: i18n.t('site.links.team_and_services', { lang }),
+        tales: i18n.t('site.links.tales', { lang }),
+        poetry: i18n.t('site.links.poetry', { lang }),
+        novel: i18n.t('site.links.novel', { lang }),
+        receipes: i18n.t('site.links.receipes', { lang }),
+      },
       title: i18n.t('site.title', { lang }),
       contact: i18n.t('site.contact', { lang }),
       tales_header: i18n.t('site.tales.title', { lang }),
@@ -103,7 +124,14 @@ export class AppController {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang ? 'pt' : i18n.lang,
+      lang: lang,
+      links: {
+        team_and_services: i18n.t('site.links.team_and_services', { lang }),
+        tales: i18n.t('site.links.tales', { lang }),
+        poetry: i18n.t('site.links.poetry', { lang }),
+        novel: i18n.t('site.links.novel', { lang }),
+        receipes: i18n.t('site.links.receipes', { lang }),
+      },
       title: i18n.t('site.title', { lang }),
       contact: i18n.t('site.contact', { lang }),
       novel_header: i18n.t('site.novel.title', { lang }),
@@ -123,7 +151,14 @@ export class AppController {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang ? 'pt' : i18n.lang,
+      lang: lang,
+      links: {
+        team_and_services: i18n.t('site.links.team_and_services', { lang }),
+        tales: i18n.t('site.links.tales', { lang }),
+        poetry: i18n.t('site.links.poetry', { lang }),
+        novel: i18n.t('site.links.novel', { lang }),
+        receipes: i18n.t('site.links.receipes', { lang }),
+      },
       title: i18n.t('site.title', { lang }),
       contact: i18n.t('site.contact', { lang }),
       receipes_header: i18n.t('site.receipes.title', { lang }),
@@ -143,7 +178,14 @@ export class AppController {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang ? 'pt' : i18n.lang,
+      lang: lang,
+      links: {
+        team_and_services: i18n.t('site.links.team_and_services', { lang }),
+        tales: i18n.t('site.links.tales', { lang }),
+        poetry: i18n.t('site.links.poetry', { lang }),
+        novel: i18n.t('site.links.novel', { lang }),
+        receipes: i18n.t('site.links.receipes', { lang }),
+      },
       title: i18n.t('site.title', { lang }),
       contact: i18n.t('site.contact', { lang }),
       poetry_header: i18n.t('site.poetry.title', { lang }),

@@ -1,8 +1,15 @@
 {
     "title": "Literacy Candy",
     "home": "Home",
-    "contact": "Contato",
+    "contact": "Contact",
     "menu": "Menu",
+    "links" : {
+        "team_and_services": "Team & Services",
+        "tales": "Tales",
+        "poetry": "Poetry",
+        "novel": "Graphic Novels",
+        "receipes": "Receipes"
+    },
     "main":{
         "title": "Looking for someone to translate your children's texts?",
         "main_text": "Count on Literacy&Candy Translation!",
@@ -78,7 +85,7 @@
         ]
     },
     "receipes": {
-        "title": "Receitas",
+        "title": "Receipes",
         "description": "Here we provide simple recipes for parents can do with children to encourage the little ones to enjoy not only reading but also by cooking.",
         "books": [
             {

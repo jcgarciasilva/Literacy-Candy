@@ -3,6 +3,13 @@
     "home": "Home",
     "contact": "Contato",
     "menu": "Menu",
+    "links" : {
+        "team_and_services": "Equipe & Serviços",
+        "tales": "Contas",
+        "poetry": "Poesias",
+        "novel": "Novelas",
+        "receipes": "Receitas"
+    },
     "main": {
         "title": "Procurando por alguém para traduzir os textos das suas crianças?",
         "main_text": "Conte com a Literacy&Candy Traduções!",
