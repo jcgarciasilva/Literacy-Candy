@@ -69,11 +69,35 @@
     },
     "poetry": {
         "title": "Poetry",
-        "description": "We offer free children's poems here in order to encourage the little ones to take a taste for the reading of poetic writing."
+        "description": "We offer free children's poems here in order to encourage the little ones to take a taste for the reading of poetic writing.",
+        "books": [
+            {
+                "title": "20 Poems by Cecília Meireles for Children", 
+                "resume": "Cecília Meireles (1901 – 1964) was a Brazilian poet, painter, journalist and teacher born in Rio de Janeiro.  The author published her first book of poems, Espectros, in 1919. This was the beginning of her literary career, well received by her peers.  This selection is the result of a very rich production of poems for children, among which stand out classics of national literature such as 'Ou this or that', 'The dancer' and 'The girls', among others."
+            }
+        ]
     },
     "receipes": {
         "title": "Receitas",
-        "description": "Here we provide simple recipes for parents can do with children to encourage the little ones to enjoy not only reading but also by cooking."
+        "description": "Here we provide simple recipes for parents can do with children to encourage the little ones to enjoy not only reading but also by cooking.",
+        "books": [
+            {
+                "title": "Cookies",
+                "resume": "Find out here how to make the recipe for delicious cookies for children."
+            },
+            {
+                "title": "Donuts de Maçã ",
+                "resume": "Deliciosos donuts saudavéis de maçã para fazer com as crianças."
+            },
+            {
+                "title": "Spinach burgere",
+                "resume": "A delicious and nutritious veggie burger recipe for kids."
+            },
+            {
+                "title": "Golden Soupe Noodles",
+                "resume": "Kids can learn how to cook noodles and boil eggs with this simple noodle soup recipe."
+            }
+        ]
     },
     "tales": {
         "title": "Tales",
@@ -98,6 +122,12 @@
     },
     "novel": {
         "title": "GRAPHIC NOVELS",
-        "description": "Here we provide weekly graphic novels to promote the work of great artists who work hard to create such beautiful stories for children.  We strongly recommend that you consume the original material to give proper credit to the artist."
+        "description": "Here we provide weekly graphic novels to promote the work of great artists who work hard to create such beautiful stories for children.  We strongly recommend that you consume the original material to give proper credit to the artist.",
+        "books": [
+            {
+                "title": "Monica's Gang",
+                "resume": "Several stories of Mônica’s Gang, all rights reserved to Mauricio de Sousa."
+            }
+        ]
     }
 }

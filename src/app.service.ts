@@ -3,31 +3,17 @@ import { I18nContext } from 'nestjs-i18n'
 
 @Injectable()
 export class AppService {
-  getPoesias(): Book[] {
-    const poesiaBooks: Book[] = []
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
+  getPoesias(i18n: I18nContext, lang: string): Book[] {
+    const books: Book[] = []
+    books.push({
+      title: i18n.t('site.poetry.books.0.title', { lang }),
+      description: i18n.t('site.poetry.books.0.resume', { lang }),
+      downloadLink:
+        'https://www.canva.com/design/DAFgwN-AlhQ/XECjAaCZ5rCm2Xw5hlT5Hw/edit?utm_content=DAFgwN-AlhQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+      image: '../20_poemas_de_Cecília_Meirelles.png',
     })
 
-    return poesiaBooks
+    return books
   }
 
   getContos(i18n: I18nContext, lang: string): Book[] {
@@ -56,99 +42,48 @@ export class AppService {
     return books
   }
 
-  getNovels(): Book[] {
+  getNovels(i18n: I18nContext, lang: string): Book[] {
     const poesiaBooks: Book[] = []
     poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
+      title: i18n.t('site.novel.books.0.title', { lang }),
+      description: i18n.t('site.novel.books.0.resume', { lang }),
+      downloadLink:
+        'https://www.canva.com/design/DAFjLioN35c/Dc6lIoz_xnk1LdvrnRijdQ/edit?utm_content=DAFjLioN35c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+      image: '../Novela_grafica.png',
     })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-
     return poesiaBooks
   }
 
-  getRecepies(): Book[] {
-    const poesiaBooks: Book[] = []
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
+  getRecepies(i18n: I18nContext, lang: string): Book[] {
+    const books: Book[] = []
+    books.push({
+      title: i18n.t('site.receipes.books.0.title', { lang }),
+      description: i18n.t('site.receipes.books.0.resume', { lang }),
+      downloadLink:
+        'https://www.canva.com/design/DAFicqVHI9w/no3doyDDBtiUOysZ6OLiSQ/edit?utm_content=DAFicqVHI9w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+      image: '../Cookies.png',
     })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
+    books.push({
+      title: i18n.t('site.receipes.books.1.title', { lang }),
+      description: i18n.t('site.receipes.books.1.resume', { lang }),
+      downloadLink:
+        'https://www.canva.com/design/DAFiciuU3-k/Wgsb8qMxvGyH_ocm9-h35A/edit?utm_content=DAFiciuU3-k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+      image: '../Donut_de_Maca.png',
     })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
+    books.push({
+      title: i18n.t('site.receipes.books.2.title', { lang }),
+      description: i18n.t('site.receipes.books.2.resume', { lang }),
+      downloadLink:
+        'https://www.canva.com/design/DAFickL9_A4/FW9xD7AcdpIrRzmRs5QM4Q/edit?utm_content=DAFickL9_A4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+      image: '../Hamburguer_de_espinafre.png',
     })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
+    books.push({
+      title: i18n.t('site.receipes.books.3.title', { lang }),
+      description: i18n.t('site.receipes.books.3.resume', { lang }),
+      downloadLink:
+        'https://www.canva.com/design/DAFiWuctlJ0/1xtiiUyF9TxBHfKKgDe0Kw/edit?utm_content=DAFiWuctlJ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+      image: '../Noodle.png',
     })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-    poesiaBooks.push({
-      title: '',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet accumsan velit. ',
-      downloadLink: '',
-      image: 'book_marks.png',
-    })
-
-    return poesiaBooks
+    return books
   }
 }

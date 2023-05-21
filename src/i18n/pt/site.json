@@ -63,11 +63,35 @@
     },
     "poetry": {
         "title": "POESIA",
-        "description": "Disponibilizamos aqui poesias infantis gratuitas de forma a incetivar os pequenos a tomar gosto pela leitura da escrita poética."
+        "description": "Disponibilizamos aqui poesias infantis gratuitas de forma a incetivar os pequenos a tomar gosto pela leitura da escrita poética.",
+        "books": [
+            {
+                "title": "20 Poemas de Cecília Meireles para Crianças", 
+                "resume": "Cecília Meireles (1901 – 1964) foi uma poeta, pintora, jornalista e professora brasileira nascida no Rio de Janeiro. A autora publicou o seu primeiro livro de poemas, Espectros, em 1919. Esse foi o começo de sua carreira literária, bem recebida pelos seus pares. Esta seleção é resultado de uma produção muito rica de poemas infantis, entre os quais se destacam clássicos da literatura nacional como 'Ou isto ou aquilo', 'A bailarina' e 'As meninas', entre outros."
+            }
+        ]
     },
     "receipes": {
         "title": "Receitas",
-        "description": "Disponibilizamos aqui receitas simples para os pais poderem fazer com as crianças para incentivar os pequenos ao gosto não só pela leitura como também pela culinária. "
+        "description": "Disponibilizamos aqui receitas simples para os pais poderem fazer com as crianças para incentivar os pequenos ao gosto não só pela leitura como também pela culinária. ",
+        "books": [
+            {
+                "title": "Cookies",
+                "resume": "Descubra aqui como fazer a receita de cookies deliciosos para as crianças. / Scopri qui come realizzare la ricetta dei deliziosi biscotti per bambini."
+            },
+            {
+                "title": "Donuts de Maçã ",
+                "resume": "Deliciosos donuts saudavéis de maçã para fazer com as crianças."
+            },
+            {
+                "title": "Hambúrguer de Espinafre / Hamburger di Spinaci",
+                "resume": "Uma deliciosa receita de hambúrguer vegetariano e nutritivo para crianças. / Una deliziosa e nutriente ricetta per hamburger vegetariani per bambini."
+            },
+            {
+                "title": "Sopa de Noodles",
+                "resume": "As crianças podem aprender a cozinhar noodles e ferver ovos com esta receita simples de sopa de macarrão noodle."
+            }
+        ]
     },
     "tales": {
         "title": "Contos",
@@ -92,6 +116,11 @@
     },
     "novel": {
         "title": "Novelas gráficas",
-        "description": "Disponibilizamos aqui novelas gráficas semanalmente para divulgar o trabalho de grandes artistas que trabalham duro para criar histórias tão belas para as crianças. Recomendamos fortemente que vocẽ consuma o material original para dar os devidos créditos ao artista."
+        "description": "Disponibilizamos aqui novelas gráficas semanalmente para divulgar o trabalho de grandes artistas que trabalham duro para criar histórias tão belas para as crianças. Recomendamos fortemente que vocẽ consuma o material original para dar os devidos créditos ao artista.",
+        "books": [
+            {
+                "title": "Turma da Mônica",
+                "resume": "Histórias diversas da Turma da Mônica, todos os direitos reservados a Mauricio de Sousa."
+            }]
     }
 }

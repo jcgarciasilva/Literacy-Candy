@@ -93,32 +93,62 @@ export class AppController {
   }
 
   @Get(['novelas', ':lang/novelas'])
-  novelas(@Res() res: Response, @I18n() i18n: I18nContext, @Param('lang') lang: string) {
+  novelas(
+    @Req() req: Request,
+    @Res() res: Response,
+    @I18n() i18n: I18nContext,
+    @Param('lang') lang: string
+  ) {
     return res.render('novelas', {
       layout: 'main',
-      title: 'Literacy Candy',
+      url: req.url,
+      gradient: true,
       lang: lang ? 'pt' : i18n.lang,
-      books: this.appService.getNovels(),
+      title: i18n.t('site.title', { lang }),
+      contact: i18n.t('site.contact', { lang }),
+      novel_header: i18n.t('site.novel.title', { lang }),
+      novel_desc: i18n.t('site.novel.description', { lang }),
+      books: this.appService.getNovels(i18n, lang),
     })
   }
 
   @Get(['receitas', ':lang/receitas'])
-  receitas(@Res() res: Response, @I18n() i18n: I18nContext, @I18nLang() lang: string) {
+  receitas(
+    @Req() req: Request,
+    @Res() res: Response,
+    @I18n() i18n: I18nContext,
+    @Param('lang') lang: string
+  ) {
     return res.render('receitas', {
       layout: 'main',
-      title: 'Literacy Candy',
+      url: req.url,
+      gradient: true,
       lang: lang ? 'pt' : i18n.lang,
-      books: this.appService.getRecepies(),
+      title: i18n.t('site.title', { lang }),
+      contact: i18n.t('site.contact', { lang }),
+      receipes_header: i18n.t('site.receipes.title', { lang }),
+      receipes_desc: i18n.t('site.receipes.description', { lang }),
+      books: this.appService.getRecepies(i18n, lang),
     })
   }
 
   @Get(['poesias', ':lang/poesias'])
-  poesias(@Res() res: Response, @I18n() i18n: I18nContext, @I18nLang() lang: string) {
+  poesias(
+    @Req() req: Request,
+    @Res() res: Response,
+    @I18n() i18n: I18nContext,
+    @Param('lang') lang: string
+  ) {
     return res.render('poesias', {
       layout: 'main',
-      title: 'Literacy Candy',
+      url: req.url,
+      gradient: true,
       lang: lang ? 'pt' : i18n.lang,
-      books: this.appService.getPoesias(),
+      title: i18n.t('site.title', { lang }),
+      contact: i18n.t('site.contact', { lang }),
+      poetry_header: i18n.t('site.poetry.title', { lang }),
+      poetry_desc: i18n.t('site.poetry.description', { lang }),
+      books: this.appService.getPoesias(i18n, lang),
     })
   }
 }
