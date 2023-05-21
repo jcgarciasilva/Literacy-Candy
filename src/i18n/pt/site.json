@@ -3,10 +3,16 @@
     "home": "Home",
     "contact": "Contato",
     "menu": "Menu",
+    "main":{
+        "title": "Procurando por alguém para traduzir os textos das suas crianças?",
+        "main_text": "Conte com a Literacy&Candy Traduções!",
+        "sub_text": "Buscamos a melhor forma de tornar a linguagem acessível para que o aprendizado das línguas seja divertido e lúdico para os pequenos.",
+        "button": "Saber mais"
+    },
     "mission": {
-        "title": "Missão, Visão & Valores",
+        "title": "Nós acreditamos...",
         "header": "Missão, Visão & Valores",
-        "description": "Nós acreditamos que a linguagem é uma janela mágica que nos conecta a pessoas e lugares distantes. É por isso que estamos aqui para tornar a aprendizagem de idiomas algo cheio de alegria e aventuras emocionantes.<br>Um tradutor de histórias infantis são verdadeiros encantadores de crianças. Eles são os responsáveis por tornar as histórias acessiveis e atraentes, trazem vida às palavras, transformando contos e fábulas em aventuras mágicas. <br>Buscamos principalmente promover o gosto das crianças pela leitura, facilitando o acesso de obras para as crianças e buscando envolver os pequenos leitores, de formar a criar conexões profundas entre as culturas e idiomas, despertando a imaginação e a curiosidade."
+        "description": "Que a linguagem é uma janela mágica que nos conecta a pessoas e lugares distantes. É por isso que estamos aqui para tornar a aprendizagem de idiomas algo cheio de alegria e aventuras emocionantes.<br>Um tradutor de histórias infantis são verdadeiros encantadores de crianças. Eles são os responsáveis por tornar as histórias acessiveis e atraentes, trazem vida às palavras, transformando contos e fábulas em aventuras mágicas. <br>Buscamos principalmente promover o gosto das crianças pela leitura, facilitando o acesso de obras para as crianças e buscando envolver os pequenos leitores, de formar a criar conexões profundas entre as culturas e idiomas, despertando a imaginação e a curiosidade."
     },
     "whoweare": {
         "title": "QUEM SOMOS",

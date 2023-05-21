@@ -3,15 +3,23 @@
     "home": "Home",
     "contact": "Contato",
     "menu": "Menu",
+    "main":{
+        "title": "Looking for someone to translate your children's texts?",
+        "main_text": "Count on Literacy&Candy Translation!",
+        "sub_text": "We seek the best way to make language accessible to make language learning fun and playful for the kids.",
+        "button": "Know more"
+    },
     "mission": {
-        "title": "Mission, vision and values",
+        "title": "We believe that ...",
         "header": "Mission, vision and values",
-        "description": "We believe that language is a magical window that connects us to distant people and places.  For that reason we are here to make language learning a joy-filled and exciting adventure.<br> A children's story translator is a true child charmer.  They are responsible for making stories accessible and engaging, bringing words to life, turning tales and fables into magical adventures.<br> We mainly seek to promote children's taste for reading, facilitating access to works for children and seeking to involve young readers, forming and creating deep connections between cultures and languages, awakening imagination and curiosity."
+        "description": "Language is a magical window that connects us to distant people and places.  For that reason we are here to make language learning a joy-filled and exciting adventure.<br> A children's story translator is a true child charmer.  They are responsible for making stories accessible and engaging, bringing words to life, turning tales and fables into magical adventures.<br> We mainly seek to promote children's taste for reading, facilitating access to works for children and seeking to involve young readers, forming and creating deep connections between cultures and languages, awakening imagination and curiosity."
     },
     "whoweare": {
         "title": "Who are we",
         "header": "Who are we",
-        "description": "Welcome to our wonderful world of translations for children! Here, we are a team who is very enthusiastic for words and tales, ready to help children all around the world to discover new languages and cultures in a a fun and educational way. <br> Our team is formed by specialised translators in children's content. We are like translating fairies, capable of transforming tales, poems end games in different languages, so that the children all around the world may enjoy those wonderful stories. <br> Besides translating, we have a thing for creating exclusive material for children. Our interactive books encourage curiosity and imagination, all in a playful and embracing way. <br>We know that discovering a new language may seem challenging, but we believe that fun is the key that unlocks all knowledges. that's is the reason why we make our material as colourful and playful as possible, along sides with lovable characters that guide the children towards their learning journey. <br>If you're a mom, a dad, a teacher, or simply a curious child, you came to the right place! Here you can dive into a world of magic words, where reading becomes an emotional adventure, full of discoveries.<br>So, join us and lets embark in this amazing journey of learning, with fun and friendship through words."
+        "title1" : "Welcome to our wonderful world of translations for children!",
+        "description1": "Here, we are a team who is very enthusiastic for words and tales, ready to help children all around the world to discover new languages and cultures in a a fun and educational way. <br> Our team is formed by specialised translators in children's content. We are like translating fairies, capable of transforming tales, poems end games in different languages, so that the children all around the world may enjoy those wonderful stories. <br> Besides translating, we have a thing for creating exclusive material for children. Our interactive books encourage curiosity and imagination, all in a playful and embracing way. <br>We know that discovering a new language may seem challenging, but we believe that fun is the key that unlocks all knowledges. that's is the reason why we make our material as colourful and playful as possible, along sides with lovable characters that guide the children towards their learning journey.",
+        "description2": "If you're a mom, a dad, a teacher, or simply a curious child, you came to the right place! Here you can dive into a world of magic words, where reading becomes an emotional adventure, full of discoveries.<br>So, join us and lets embark in this amazing journey of learning, with fun and friendship through words."
     },
     "contos": {
         "title": "Missão, Visão & Valores",
@@ -19,7 +27,7 @@
         "description": "Bem-vindos ao nosso incrível mundo de tradução infantil! Aqui, somos uma equipe apaixonada por palavras e histórias, prontos para ajudar crianças de todo o mundo a descobrir novas línguas e culturas de forma divertida e educativa. <br>   Nossa equipe é formada por tradutores especializados em conteúdo infantil. Somos como fadas da tradução, capazes de transformar contos, poemas e jogos em diferentes idiomas, para que crianças de todas as partes do mundo possam desfrutar dessas maravilhosas histórias.      Além de traduzir, também adoramos criar materiais exclusivos para as crianças. Nossos livros interativos estimulam a curiosidade e a imaginação, tudo de forma lúdica e envolvente. <br> Sabemos que desvendar uma nova língua pode parecer desafiador, mas acreditamos que a diversão é a chave para desbloquear esse conhecimento. É por isso que nossos materiais são coloridos, animados e cheios de personagens cativantes que guiam as crianças em suas jornadas de aprendizado. <br> Se você é um pai, uma mãe, um professor ou simplesmente uma criança curiosa, você veio ao lugar certo! Estamos aqui para ajudá-lo a mergulhar em um mundo de palavras mágicas, onde ler se torna uma aventura emocionante e cheia de descobertas.<br>      Então, junte-se a nós e vamos embarcar nessa jornada incrível de aprendizado, diversão e amizade através das palavras!"
     },
     "team": {
-        "title": "EQUIPE",
+        "title": "TEAM",
         "description": "Together, our team forms a group passionate about languages ​​and dedicated to making learning languages ​​and reading texts a magical and exciting journey for children.  We are here to offer the best children's translations, promoting a love of reading, respect for cultures and curiosity for the world around us.",
         "members": [
             {
