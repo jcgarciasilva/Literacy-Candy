@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Req, Res } from '@nestjs/common'
+import { Controller, Get, Param, Query, Req, Res } from '@nestjs/common'
 import { Request, Response } from 'express'
 import { I18n, I18nContext, I18nService } from 'nestjs-i18n'
 import { AppService } from './app.service'
@@ -10,19 +10,19 @@ export class AppController {
     private readonly i18nService: I18nService
   ) {}
 
-  @Get(['/', '/:lang'])
+  @Get(['/'])
   index(
     @Req() req: Request,
     @Res() res: Response,
     @I18n() i18n: I18nContext,
-    @Param('lang') lang: string
+    @Query('lang') lang: string
   ) {
     this.i18nService.resolveLanguage(lang)
     return res.status(200).render('index', {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang,
+      lang: lang == undefined ? 'pt' : lang,
       links: {
         team_and_services: i18n.t('site.links.team_and_services', { lang }),
         tales: i18n.t('site.links.tales', { lang }),
@@ -46,18 +46,18 @@ export class AppController {
     })
   }
 
-  @Get(['team', ':lang/team'])
+  @Get(['team'])
   team(
     @Req() req: Request,
     @Res() res: Response,
     @I18n() i18n: I18nContext,
-    @Param('lang') lang: string
+    @Query('lang') lang: string
   ) {
     return res.status(200).render('team', {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang,
+      lang: lang == undefined? 'pt' : lang ,
       links: {
         team_and_services: i18n.t('site.links.team_and_services', { lang }),
         tales: i18n.t('site.links.tales', { lang }),
@@ -84,18 +84,18 @@ export class AppController {
     })
   }
 
-  @Get(['contos', ':lang/contos'])
+  @Get(['contos'])
   contos(
     @Req() req: Request,
     @Res() res: Response,
     @I18n() i18n: I18nContext,
-    @Param('lang') lang: string
+    @Query('lang') lang: string
   ) {
     return res.render('contos', {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang,
+      lang: lang == undefined ? 'pt' : lang,
       links: {
         team_and_services: i18n.t('site.links.team_and_services', { lang }),
         tales: i18n.t('site.links.tales', { lang }),
@@ -113,18 +113,18 @@ export class AppController {
     })
   }
 
-  @Get(['novelas', ':lang/novelas'])
+  @Get(['novelas'])
   novelas(
     @Req() req: Request,
     @Res() res: Response,
     @I18n() i18n: I18nContext,
-    @Param('lang') lang: string
+    @Query('lang') lang: string
   ) {
     return res.render('novelas', {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang,
+      lang: lang == undefined ? 'pt' : lang,
       links: {
         team_and_services: i18n.t('site.links.team_and_services', { lang }),
         tales: i18n.t('site.links.tales', { lang }),
@@ -140,18 +140,18 @@ export class AppController {
     })
   }
 
-  @Get(['receitas', ':lang/receitas'])
+  @Get(['receitas'])
   receitas(
     @Req() req: Request,
     @Res() res: Response,
     @I18n() i18n: I18nContext,
-    @Param('lang') lang: string
+    @Query('lang') lang: string
   ) {
     return res.render('receitas', {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang,
+      lang: lang == undefined ? 'pt' : lang,
       links: {
         team_and_services: i18n.t('site.links.team_and_services', { lang }),
         tales: i18n.t('site.links.tales', { lang }),
@@ -167,18 +167,18 @@ export class AppController {
     })
   }
 
-  @Get(['poesias', ':lang/poesias'])
+  @Get(['poesias'])
   poesias(
     @Req() req: Request,
     @Res() res: Response,
     @I18n() i18n: I18nContext,
-    @Param('lang') lang: string
+    @Query('lang') lang: string
   ) {
     return res.render('poesias', {
       layout: 'main',
       url: req.url,
       gradient: true,
-      lang: lang,
+      lang: lang == undefined ? 'pt' : lang,
       links: {
         team_and_services: i18n.t('site.links.team_and_services', { lang }),
         tales: i18n.t('site.links.tales', { lang }),
