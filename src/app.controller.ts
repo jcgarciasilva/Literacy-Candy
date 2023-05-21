@@ -58,20 +58,42 @@ export class AppController {
       team_members1: i18n.t('site.team.members.0.description', { lang }),
       team_members2: i18n.t('site.team.members.1.description', { lang }),
       team_members3: i18n.t('site.team.members.2.description', { lang }),
-      services_header: i18n.t('site.services.header', {lang}),
-      services_desc_type1: i18n.t('site.services.desc.0.type', {lang}),
-      services_desc_desc1: i18n.t('site.services.desc.0.description', {lang}),
-      services_desc_type2: i18n.t('site.services.desc.1.type', {lang}),
-      services_desc_desc2: i18n.t('site.services.desc.1.description', {lang}),
-      services_desc_type3: i18n.t('site.services.desc.2.type', {lang}),
-      services_desc_desc3: i18n.t('site.services.desc.2.description', {lang}),
-      services_desc_type4: i18n.t('site.services.desc.3.type', {lang}),
-      services_desc_desc4: i18n.t('site.services.desc.3.description', {lang}),
-        })
+      services_header: i18n.t('site.services.header', { lang }),
+      services_desc_type1: i18n.t('site.services.desc.0.type', { lang }),
+      services_desc_desc1: i18n.t('site.services.desc.0.description', { lang }),
+      services_desc_type2: i18n.t('site.services.desc.1.type', { lang }),
+      services_desc_desc2: i18n.t('site.services.desc.1.description', { lang }),
+      services_desc_type3: i18n.t('site.services.desc.2.type', { lang }),
+      services_desc_desc3: i18n.t('site.services.desc.2.description', { lang }),
+      services_desc_type4: i18n.t('site.services.desc.3.type', { lang }),
+      services_desc_desc4: i18n.t('site.services.desc.3.description', { lang }),
+    })
+  }
+
+  @Get(['contos', ':lang/contos'])
+  contos(
+    @Req() req: Request,
+    @Res() res: Response,
+    @I18n() i18n: I18nContext,
+    @Param('lang') lang: string
+  ) {
+    return res.render('contos', {
+      layout: 'main',
+      url: req.url,
+      gradient: true,
+      lang: lang ? 'pt' : i18n.lang,
+      title: i18n.t('site.title', { lang }),
+      contact: i18n.t('site.contact', { lang }),
+      tales_header: i18n.t('site.tales.title', { lang }),
+      tales_desc: i18n.t('site.tales.description', { lang }),
+      tales_header_in: i18n.t('site.tales.title_in', { lang }),
+      tales_desc_in: i18n.t('site.tales.description_in', { lang }),
+      books: this.appService.getContos(i18n, lang),
+    })
   }
 
   @Get(['novelas', ':lang/novelas'])
-  novelas(@Res() res: Response, @I18n() i18n: I18nContext,@Param('lang') lang: string) {
+  novelas(@Res() res: Response, @I18n() i18n: I18nContext, @Param('lang') lang: string) {
     return res.render('novelas', {
       layout: 'main',
       title: 'Literacy Candy',
@@ -97,16 +119,6 @@ export class AppController {
       title: 'Literacy Candy',
       lang: lang ? 'pt' : i18n.lang,
       books: this.appService.getPoesias(),
-    })
-  }
-
-  @Get(['contos', ':lang/contos'])
-  contos(@Res() res: Response, @I18n() i18n: I18nContext, @I18nLang() lang: string) {
-    return res.render('contos', {
-      layout: 'main',
-      title: 'Literacy Candy',
-      lang: lang ? 'pt' : i18n.lang,
-      books: this.appService.getContos(),
     })
   }
 }

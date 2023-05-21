@@ -77,7 +77,24 @@
     },
     "tales": {
         "title": "Tales",
-        "description": " Here we have children's stories available in public domain translated into Portuguese, from so that children can have contact with the children's classics."
+        "description": " Here we have children's stories available in public domain translated into Portuguese, from so that children can have contact with the children's classics.",
+        "title_in": "Racconti",
+        "description_in": "Qui abbiamo storie per bambini disponibili in pubblico dominio tradotte in portoghese, in modo che i bambini possano avere un contatto con i classici per bambini.",
+        
+        "books": [
+            {
+                "title": "The Witch and the Cauldron",
+                "resume": "A very cunning little witch is left with a lot of problems to solve after her cauldron leaks."
+            },
+            {
+                "title": "Little Red Riding Hood",
+                "resume": "The story of a little girl who just wanted to take care of her sick grandmother and had to get rid of a lingering wolf in the forest."
+            },
+            {
+                "title": "Hänsel and Gretel",
+                "resume": "Hänsel und Gretel is an oral tradition fairy tale that was collected by the Brothers Grimm.  Hansel and Gretel is an old fable that tells the story of two brothers abandoned in a forest."
+            }
+        ]
     },
     "novel": {
         "title": "GRAPHIC NOVELS",

@@ -2,21 +2,25 @@
 <div class='pt-12 min-h-screen'>
   <div class='container max-w-5xl mx-auto m-8'>
     <h2 class='w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800'>
-      CONTOS
+      {{this.tales_header}}
     </h2>
     <div class="w-full mb-4">
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
     <p class="text-gray-600 mb-8">
-      Praesent nunc diam, lacinia aliquam placerat et, vestibulum in elit. Nulla
-      sodales condimentum erat, id tempus libero. Nam a imperdiet tortor. Nullam
-      tempor eget augue sed varius. Quisque eget nisi dapibus nibh consectetur
-      ornare at dictum lectus. Ut massa orci, porttitor eget elit quis,
-      convallis laoreet tellus. Morbi fringilla velit et ex tristique accumsan.
-      Mauris vel posuere elit. Morbi commodo arcu quis tellus cursus
-      consectetur. Mauris hendrerit lectus diam, et fermentum est bibendum quis.
-      Morbi lacinia vulputate purus sed tempor. Suspendisse sit amet suscipit
-      mi.
+      {{{this.tales_desc}}}
+    </p>
+  </div>
+
+  <div class='container max-w-5xl mx-auto m-8'>
+    <h2 class='w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800'>
+      {{this.tales_header_in}}
+    </h2>
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+    </div>
+    <p class="text-gray-600 mb-8">
+      {{{this.tales_desc_in}}}
     </p>
   </div>
 
@@ -26,7 +30,7 @@
 
       <div class=" border border-gray-300 shadow rounded-md p-4 max-w-sm w-full mx-auto mb-20">
         <div class="flex space-x-4">
-          <div class="w-full md:w-3/5 py-6 text-center ">
+          <div class="w-full md:w-2/4 py-6 text-center ">
             <img class="w-full md:w-24 h-36 z-50 " alt="{{this.title}}" src="{{this.image}}" />
           </div>
       
@@ -35,9 +39,11 @@
               <p class="text-gray-800">
                 {{this.description}}
               </p>
+              <div class="mt-15">
+              <a class="text-gray-800 hover:underline hover:underline-offset-1 mt-10" href="{{this.downloadLink}}" >download</a>
+              </div>
             </div>
           </div>
-         
         </div>
       </div>
 

@@ -3,7 +3,7 @@
     "home": "Home",
     "contact": "Contato",
     "menu": "Menu",
-    "main":{
+    "main": {
         "title": "Procurando por alguém para traduzir os textos das suas crianças?",
         "main_text": "Conte com a Literacy&Candy Traduções!",
         "sub_text": "Buscamos a melhor forma de tornar a linguagem acessível para que o aprendizado das línguas seja divertido e lúdico para os pequenos.",
@@ -17,7 +17,7 @@
     "whoweare": {
         "title": "QUEM SOMOS",
         "header": "",
-        "title1" : "Bem-vindos ao nosso incrível mundo de tradução infantil!",
+        "title1": "Bem-vindos ao nosso incrível mundo de tradução infantil!",
         "description1": "Aqui, somos uma equipe apaixonada por palavras e histórias, prontos para ajudar crianças de todo o mundo a descobrir novas línguas e culturas de forma divertida e educativa. <br>   Nossa equipe é formada por tradutores especializados em conteúdo infantil. Somos como fadas da tradução, capazes de transformar contos, poemas e jogos em diferentes idiomas, para que crianças de todas as partes do mundo possam desfrutar dessas maravilhosas histórias.      Além de traduzir, também adoramos criar materiais exclusivos para as crianças. Nossos livros interativos estimulam a curiosidade e a imaginação, tudo de forma lúdica e envolvente. <br> Sabemos que desvendar uma nova língua pode parecer desafiador, mas acreditamos que a diversão é a chave para desbloquear esse conhecimento. É por isso que nossos materiais são coloridos, animados e cheios de personagens cativantes que guiam as crianças em suas jornadas de aprendizado.",
         "description2": "Se você é um pai, uma mãe, um professor ou simplesmente uma criança curiosa, você veio ao lugar certo! Estamos aqui para ajudá-lo a mergulhar em um mundo de palavras mágicas, onde ler se torna uma aventura emocionante e cheia de descobertas.<br> Então, junte-se a nós e vamos embarcar nessa jornada incrível de aprendizado, diversão e amizade através das palavras! Estamos aqui para ajudá-lo a mergulhar em um mundo de palavras mágicas, onde ler se torna uma aventura emocionante e cheia de descobertas.<br>      Então, junte-se a nós e vamos embarcar nessa jornada incrível de aprendizado, diversão e amizade através das palavras!"
     },
@@ -71,7 +71,24 @@
     },
     "tales": {
         "title": "Contos",
-        "description": "Disponibilizamos aqui contos infantis já em dominio público traduzidos para o português, de forma que as crianças possam ter contato com os clássicos infantis."
+        "description": "Disponibilizamos aqui contos infantis já em dominio público traduzidos para o português, de forma que as crianças possam ter contato com os clássicos infantis.",
+        "title_in": "Racconti",
+        "description_in": "Qui abbiamo storie per bambini disponibili in pubblico dominio tradotte in portoghese, in modo che i bambini possano avere un contatto con i classici per bambini.",
+        
+        "books": [
+            {
+                "title": "A Bruxa e o Caldeirão",
+                "resume": "Uma bruxinha muito astuta fica com muitos problemas pra resolver após seu caldeirão furar."
+            },
+            {
+                "title": "Chapeuzinho Vermelho / Cappucceto Rosso",
+                "resume": "A história de uma garotinha que só queria cuidar de sua avó adoecida e teve que se livrar de um lobo insistente na floresta. / La storia di una bambina che voleva solo prendersi cura della nonna malata e doveva liberarsi di un lupo persistente nella foresta."
+            },
+            {
+                "title": "João e Maria",
+                "resume": "João e Maria é um conto de fadas de tradição oral e que foi coletado pelos irmãos Grimm. João e Maria é uma fábula antiga que conta a história de dois irmãos abandonados em uma floresta."
+            }
+        ]
     },
     "novel": {
         "title": "Novelas gráficas",
