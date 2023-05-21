@@ -27,15 +27,15 @@
         "members": [
             {
                 "name": "Anna Clara Neiva Bastos",
-                "description": "estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT. Tradutora de holandês e espanhol e responsável pelo comercial da empresa: ela é a responsável por gerir os pedidos e assegurar o bom contato com os nossos clientes, de forma que possamos promover a melhor experiência de atendimento e garantir que as traduções sejam realizadas o mais fielmente possivel com aquilo que nos é solicitado."
+                "description": "Estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT. Tradutora de holandês e espanhol e responsável pelo comercial da empresa: ela é a responsável por gerir os pedidos e assegurar o bom contato com os nossos clientes, de forma que possamos promover a melhor experiência de atendimento e garantir que as traduções sejam realizadas o mais fielmente possivel com aquilo que nos é solicitado."
             },
             {
                 "name": "Luiza Helena Pacheco Testi de Almeida",
-                "description": "estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT, ela é a gerente e idealizadora principal da Literacy Candy Traduções. Exploradora de novas culturas e tradutora: ela é especialista em culturas e tradições está sempre explorando novos territórios linguísticos, mas a sua especialidade é a língua inglesa. Ela é sempre atenta as peculiaridades de cada idioma, as tradições locais e os costumes, para garantir que nossas traduções sejam autênticas e reflitam a riqueza cultural de cada região."
+                "description": "Estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT, ela é a gerente e idealizadora principal da Literacy Candy Traduções. Exploradora de novas culturas e tradutora: ela é especialista em culturas e tradições está sempre explorando novos territórios linguísticos, mas a sua especialidade é a língua inglesa. Ela é sempre atenta as peculiaridades de cada idioma, as tradições locais e os costumes, para garantir que nossas traduções sejam autênticas e reflitam a riqueza cultural de cada região."
             },
             {
                 "name": "Melissa de França Lemes",
-                "description": "estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT. A revisora, tradutora de italiano e designer criativa: Nossa designer têm o dom de transformar páginas estáticas em universos vibrantes e coloridos. Ela traz personagens encantadores à vida, criam ilustrações cativantes e projetam layouts atraentes para nossos livros e nosso site. Tudo isso para tornar a experiência de leitura e aprendizado visualmente estimulante e agradável."
+                "description": "Estudante de Línguas Aplicadas pela Universidade do Minho em Braga/PT. A revisora, tradutora de italiano e designer criativa: Nossa designer têm o dom de transformar páginas estáticas em universos vibrantes e coloridos. Ela traz personagens encantadores à vida, criam ilustrações cativantes e projetam layouts atraentes para nossos livros e nosso site. Tudo isso para tornar a experiência de leitura e aprendizado visualmente estimulante e agradável."
             }
         ]
     },
@@ -59,8 +59,7 @@
                 "type": "Terminologia e elaboração de glossários",
                 "description": "Fazemos o levantamento de terminologia específica da área em questão, compilamos glossários e mantemos a consistência ao longo de todo o trabalho."
             }
-        ],
-        "description": "Bem-vindos ao nosso incrível mundo de tradução infantil! Aqui, somos uma equipe apaixonada por palavras e histórias, prontos para ajudar crianças de todo o mundo a descobrir novas línguas e culturas de forma divertida e educativa. <br>   Nossa equipe é formada por tradutores especializados em conteúdo infantil. Somos como fadas da tradução, capazes de transformar contos, poemas e jogos em diferentes idiomas, para que crianças de todas as partes do mundo possam desfrutar dessas maravilhosas histórias.      Além de traduzir, também adoramos criar materiais exclusivos para as crianças. Nossos livros interativos estimulam a curiosidade e a imaginação, tudo de forma lúdica e envolvente. <br> Sabemos que desvendar uma nova língua pode parecer desafiador, mas acreditamos que a diversão é a chave para desbloquear esse conhecimento. É por isso que nossos materiais são coloridos, animados e cheios de personagens cativantes que guiam as crianças em suas jornadas de aprendizado. <br> Se você é um pai, uma mãe, um professor ou simplesmente uma criança curiosa, você veio ao lugar certo! Estamos aqui para ajudá-lo a mergulhar em um mundo de palavras mágicas, onde ler se torna uma aventura emocionante e cheia de descobertas.<br>      Então, junte-se a nós e vamos embarcar nessa jornada incrível de aprendizado, diversão e amizade através das palavras!"
+        ]
     },
     "poetry": {
         "title": "POESIA",

@@ -2,14 +2,14 @@
   <div class='pt-12 min-h-screen'>
     <div class='container max-w-5xl mx-auto m-8'>
       <h2 class='w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800'>
-        Equipe
+        {{ this.team}}
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img class="h-40" src="book_lover_yellow.png">
+          <img class="h-40" src="../teacher_blue.png">
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -17,7 +17,7 @@
               Ana Clara Bastos Neiva
             </h3>
             <p class="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+              {{this.team_members1}}
               
             </p>
           </div>
@@ -29,18 +29,18 @@
             Luiza Almeida
           </h3>
           <p class="text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+            {{this.team_members2}}
             
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
-          <img class="h-40" src="teacher_blue.png">
+          <img class="h-40" src="../teacher_blue.png">
         </div>
       </div>
 
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img class="h-40" src="book_lover_yellow.png">
+          <img class="h-40" src="../teacher_blue.png">
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -48,7 +48,7 @@
               Melissa de França Lemes
             </h3>
             <p class="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+              {{this.team_members3}}
               
             </p>
           </div>
@@ -56,24 +56,26 @@
       </div>
       
     </div>
+    
+    <div class='pt-12 min-h-screen'>
     <div class="container max-w-5xl mx-auto m-8">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Serviços
+        {{this.services_header}}
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img class="h-40" src="book_lover_yellow.png">
+          <img class="h-40" src="../book_lover_yellow.png">
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
             <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Lorem ipsum dolor sit amet
+              {{{this.services_desc_type1}}}
             </h3>
             <p class="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+              {{{this.services_desc_desc1}}}
               
             </p>
           </div>
@@ -82,19 +84,53 @@
       <div class="flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Lorem ipsum dolor sit amet
+            {{this.services_desc_type2}}
           </h3>
           <p class="text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+            {{{this.services_desc_desc2}}}
             
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
-          <img class="h-40" src="teacher_blue.png">
+          <img class="h-40" src="../teacher_blue.png">
+        </div>
+      </div>
+
+      <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <img class="h-40" src="../book_lover_yellow.png">
+        </div>
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+          <div class="align-middle">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              {{this.services_desc_type3}}
+            </h3>
+            <p class="text-gray-600 mb-8">
+              {{{this.services_desc_desc3}}} 
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="w-5/6 sm:w-1/2 p-6">
+          <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            {{this.services_desc_type4}}
+          </h3>
+          <p class="text-gray-600 mb-8">
+            {{this.services_desc_desc4}}
+            
+          </p>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <img class="h-40" src="../teacher_blue.png">
         </div>
       </div>
       
     </div>
+    
+    
+  </div>
   </section>
   
 

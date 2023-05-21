@@ -26,7 +26,7 @@ export class AppController {
       title: i18n.t('site.title'),
       contact: i18n.t('site.contact'),
       main_title: i18n.t('site.main.title', { lang }),
-      main_text: i18n.t('site.main.main_text',{ lang }),
+      main_text: i18n.t('site.main.main_text', { lang }),
       main_sub_text: i18n.t('site.main.sub_text', { lang }),
       main_button: i18n.t('site.main.button', { lang }),
       whoweare: i18n.t('site.whoweare.title', { lang }),
@@ -44,19 +44,34 @@ export class AppController {
     @Req() req: Request,
     @Res() res: Response,
     @I18n() i18n: I18nContext,
-    @I18nLang() lang: string
+    @Param('lang') lang: string
   ) {
     return res.status(200).render('team', {
       layout: 'main',
       url: req.url,
       gradient: true,
       lang: lang ? 'pt' : i18n.lang,
-      title: 'Literacy Candy',
-    })
+      title: i18n.t('site.title', { lang }),
+      contact: i18n.t('site.contact', { lang }),
+      team: i18n.t('site.team.title', { lang }),
+      team_descriptios: i18n.t('site.team.description', { lang }),
+      team_members1: i18n.t('site.team.members.0.description', { lang }),
+      team_members2: i18n.t('site.team.members.1.description', { lang }),
+      team_members3: i18n.t('site.team.members.2.description', { lang }),
+      services_header: i18n.t('site.services.header', {lang}),
+      services_desc_type1: i18n.t('site.services.desc.0.type', {lang}),
+      services_desc_desc1: i18n.t('site.services.desc.0.description', {lang}),
+      services_desc_type2: i18n.t('site.services.desc.1.type', {lang}),
+      services_desc_desc2: i18n.t('site.services.desc.1.description', {lang}),
+      services_desc_type3: i18n.t('site.services.desc.2.type', {lang}),
+      services_desc_desc3: i18n.t('site.services.desc.2.description', {lang}),
+      services_desc_type4: i18n.t('site.services.desc.3.type', {lang}),
+      services_desc_desc4: i18n.t('site.services.desc.3.description', {lang}),
+        })
   }
 
   @Get(['novelas', ':lang/novelas'])
-  novelas(@Res() res: Response, @I18n() i18n: I18nContext, @I18nLang() lang: string) {
+  novelas(@Res() res: Response, @I18n() i18n: I18nContext,@Param('lang') lang: string) {
     return res.render('novelas', {
       layout: 'main',
       title: 'Literacy Candy',
